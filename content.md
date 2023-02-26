@@ -12,9 +12,9 @@ If your local branch is missing commits, run `git pull` or `git fetch` and `git 
 
 #### `git fetch` 
 
-get changes from a remote repo into your tracking branch
-`git fetch` again takes our current branch, and checks to see if there is a tracking branch. If so, it looks for changes in the remote branch, and pulls them into the tracking branch. It does not change your local branch. To do that, you'll need to do `git merge origin/master` (for the "master" branch) to merge those changes into your branch - probably also called "master".
+The `git fetch` command gets changes from a remote repository into your tracking branch. This command does not change your local branch. 
 
+To merge your tracking branch changes into your local branch, run `git merge origin/master`.
 
 #### `git pull` 
 
