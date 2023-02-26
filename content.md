@@ -4,9 +4,11 @@
 
 #### `git push` 
 
-sent changes from a local branch to a remote repo
-`git push` takes our current branch, and checks to see whether or not there is a tracking branch for a remote repository connected to it. If so, our changes are taken from our branch and pushed to the remote branch. This is how code is shared with a remote repository, you can think of it as "make the remote branch resemble my local branch". This will fail if the remote branch has diverged from your local branch: if not all the commits in the remote branch are in your local branch. When this happens, your local branch needs to be synchronized with the remote branch with git pull or git fetch and git merge.
+The `git push` command sends changes from your local branch to a tracking branch in a connected remote repository.
 
+The changes from this command match the remote branch with your local branch. If your local branch is missing commits from the remote branch, the push fails. 
+
+If your local branch is missing commits, run `git pull` or `git fetch` and `git merge` to synchronize with your remote branch.
 
 #### `git fetch` 
 
