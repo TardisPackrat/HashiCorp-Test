@@ -18,12 +18,6 @@ To merge your tracking branch changes into your local branch, run `git merge ori
 
 #### `git pull` 
 
-will get changes from a remote branch into your tracking branch and merge them into a local branch
+The `git pull` command gets changes from a remote branch into your tracking branch and merges them into your local branch. This is identical to running `git fetch` followed by `git merge`. 
 
-Often `git push` and `git pull` are described as equivalent. This isn't entirely correct, since under the hood `git pull` does two things. 
-
-`git pull` simply does a `git fetch` followed immediately by `git merge`. This is often what we desire to do, but some people prefer to use git fetch followed by git merge to make sure they understand the changes they are merging into their branch before the merge happens.
-
-
-
-
+To review the changes you are making prior to merging, use the `git fetch` command. After you've reviewed your changes, run the `git merge` command to merge them.
